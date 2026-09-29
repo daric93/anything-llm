@@ -99,6 +99,7 @@ class Valkey extends VectorDatabase {
       useTLS,
       requestTimeout,
       protocol: ProtocolVersion.RESP2,
+      clientInfoTag: "anythingllm", // lib-name attribution: GlideJS(anythingllm)
     };
     // Attach credentials when either a username or password is configured.
     // Username-only ACL users are valid, so gating solely on `password` would
